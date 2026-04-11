@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class ExpirableProduct extends PhysicalProduct {
-    private LocalDate expiryDate; // you must maintain the format of dd/mm/yy
+    private LocalDate expiryDate; 
 
     public ExpirableProduct(String name, double price, int quantity, LocalDate expiryDate, double weight) {
         super(name, price, quantity, weight);
