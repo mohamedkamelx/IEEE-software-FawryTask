@@ -8,7 +8,11 @@ public class ShippingService {
         if (cart== null){
             return 0.0;
         }else{
-            return cart.length*SHIPPING_FEE;
+            int items=0;
+            for (int i=0;i<cart.length;i++){
+                items+=cart[i].getQuantity();
+            }
+            return items*SHIPPING_FEE;
         }
     }
 
