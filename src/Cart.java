@@ -14,6 +14,7 @@ public class Cart {
 
         if (items== null){
             items = new CartItem[]{ new CartItem(product, quantity) };
+            return;
         }
         for (int i =0;i<items.length;i++){
             if (items[i].getProduct().getID()==product.getID()){

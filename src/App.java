@@ -9,8 +9,8 @@ public class App {
         PhysicalProduct biscuits = new ExpirableProduct("Biscuits", 150, 5, LocalDate.of(2026, 12, 31), 700);
         NonPhysicalProd scratchCard = new NonPhysicalProd("Mobile Scratch Card", 50, 100);
 
-        cart.add(cheese, 2);
-        cart.add(biscuits, 1);
+        cart.add(cheese, 3);
+        cart.add(biscuits, 2);
         cart.add(scratchCard, 1);
 
         CheckoutService.checkout(customer, cart);
